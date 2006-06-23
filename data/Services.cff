@@ -1,0 +1,4 @@
+service = Tracer {} 		// framework debugging...
+service = SimpleMemoryCheck {}	// check memory
+service = SimpleProfiling {}	// subroutine-by-subroutine timing
+service = Timing {}		// module-by-module timing
