@@ -1,9 +1,12 @@
 module PoolOutput = PoolOutputModule 
 { 
 	untracked  string fileName       = "output.root"
-//	untracked vstring outputCommands = { "keep *" }
+#	untracked vstring outputCommands = 
+#	{ 
+#		"drop *" 
+#		"keep *_SiStrip*_*_*" 
+#	}
 }
-
 
 // untracked  string fileName:		[default=?]	output file name
 // untracked vstring outputCommands:	[default=?]	defines which data types are made persistent
