@@ -1,4 +1,4 @@
-module OutputService = OutServ 
+module PoolOutputSafe = OutServ 
 {
 	untracked  int32 maxSize        = 100000000
 	untracked uint32 commitInterval = 1000
