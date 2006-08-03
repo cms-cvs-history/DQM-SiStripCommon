@@ -4,7 +4,7 @@ service = MonitorDaemon {
 	untracked string DestinationAddress = "localhost"	
         untracked  int32 SendPort           = 9090
         untracked  int32 UpdateDelay        = 1000
-        untracked string NameAsSource       = "SiStripCommissioningSource0"
+        untracked string NameAsSource       = "Source"
 }
 
 // untracked bool AutoInstantiate: 		[default=?]	DQM thread in background
