@@ -1,6 +1,6 @@
 module PoolOutput = PoolOutputModule 
 { 
-	untracked  string fileName       = "output.root"
+	untracked  string fileName       = "PoolOutput.root"
 #	untracked vstring outputCommands = 
 #	{ 
 #		"drop *" 

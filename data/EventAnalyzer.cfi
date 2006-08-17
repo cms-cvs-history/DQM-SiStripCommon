@@ -1,0 +1,4 @@
+module EventAnalyzer = EventContentAnalyzer 
+{ 
+	// any parameters?...
+}
