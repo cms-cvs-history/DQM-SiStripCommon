@@ -1,22 +1,45 @@
 service = MessageLogger 
 {
-	untracked vstring destinations = { "event.log", "error.log", "debug.log" } 
+	untracked vstring destinations = 
+	{ 
+		"event.log", 
+		"error.log", 
+		"debug.log" 
+	} 
+
 	untracked PSet error.log = 
 	{ 
 		untracked string threshold = "WARNING" 
-		untracked PSet default = { untracked int32 limit = -1 untracked bool noLineBreaks = false } 
+		untracked PSet default = 
+		{ 
+			untracked int32 limit = -1 
+			untracked bool noLineBreaks = false 
+		} 
 	}
+
 	untracked PSet event.log = 
 	{ 
-		untracked string threshold = "INFO"
-		untracked PSet default = { untracked int32 limit = -1 untracked bool noLineBreaks = false } 
+		untracked string threshold = "INFO" 
+		untracked PSet default = 
+		{ 
+			untracked int32 limit = -1 
+			untracked bool noLineBreaks = false 
+		} 
 	}
+
 	untracked PSet debug.log = 
 	{ 
-		untracked string threshold = "DEBUG"
-		untracked PSet default = { untracked int32 limit = -1 untracked bool noLineBreaks = false } 
+		untracked string threshold = "DEBUG" 
+		untracked PSet default = 
+		{ 
+			untracked int32 limit = -1 
+			untracked bool noLineBreaks = false 
+		} 
 	}
-	untracked vstring debugModules = { "*" } //@@ comment to suppress debug statements!
+
+	//@@ comment to suppress debug statements!
+	//untracked vstring debugModules = { "*" } 
+
 }
 
 // "error.log": contains ERRORs and WARNINGs
