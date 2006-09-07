@@ -3,7 +3,7 @@ service = MonitorDaemon {
         untracked  int32 reconnect_delay    = 5
 	untracked string DestinationAddress = "localhost"	
         untracked  int32 SendPort           = 9090
-        untracked  int32 UpdateDelay        = 5000
+        untracked  int32 UpdateDelay        = 100
         untracked string NameAsSource       = "Source"
 }
 
