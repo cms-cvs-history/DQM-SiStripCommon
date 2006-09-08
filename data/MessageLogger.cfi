@@ -38,7 +38,7 @@ service = MessageLogger
     }
     
     //@@ comment to suppress debug statements!
-    //untracked vstring debugModules = { "*" } 
+    untracked vstring debugModules = { "*" } 
 
 }
 
