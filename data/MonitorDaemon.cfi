@@ -1,10 +1,10 @@
 service = MonitorDaemon {
- 	untracked   bool AutoInstantiate    = true
-        untracked  int32 reconnect_delay    = 5
-	untracked string DestinationAddress = "localhost"	
-        untracked  int32 SendPort           = 9090
-        untracked  int32 UpdateDelay        = 100
-        untracked string NameAsSource       = "Source"
+    untracked   bool AutoInstantiate = true
+    untracked  int32 reconnect_delay = 5
+    untracked string DestinationAddress = "localhost"	
+    untracked  int32 SendPort = 9090
+    untracked  int32 UpdateDelay = 100
+    untracked string NameAsSource = "SiStripCommissioningSource"
 }
 
 // untracked bool AutoInstantiate: 		[default=?]	DQM thread in background

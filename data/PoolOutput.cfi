@@ -1,11 +1,11 @@
 module PoolOutput = PoolOutputModule 
 { 
-	untracked  string fileName       = "PoolOutput.root"
-#	untracked vstring outputCommands = 
-#	{ 
-#		"drop *" 
-#		"keep *_SiStrip*_*_*" 
-#	}
+    untracked  string fileName       = "PoolOutput.root"
+    #	untracked vstring outputCommands = 
+    #	{ 
+    #		"drop *" 
+    #		"keep *_SiStrip*_*_*" 
+    #	}
 }
 
 // untracked  string fileName:		[default=?]	output file name
