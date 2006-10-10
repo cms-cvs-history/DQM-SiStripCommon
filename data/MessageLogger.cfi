@@ -2,7 +2,7 @@ service = MessageLogger
 {
     untracked vstring destinations = 
     { 
-	//"cout",
+	"cout",
 	//"cerr",
 	"event.log", 
 	"error.log", 
@@ -14,7 +14,7 @@ service = MessageLogger
 	untracked string threshold = "INFO" 
 	untracked PSet default = 
 	{ 
-	    untracked int32 limit = -1 
+	    untracked int32 limit = 100000
 	    untracked bool noLineBreaks = false 
 	} 
     }
@@ -24,7 +24,7 @@ service = MessageLogger
 	untracked string threshold = "ERROR" 
 	untracked PSet default = 
 	{ 
-	    untracked int32 limit = -1 
+	    untracked int32 limit = 100000
 	    untracked bool noLineBreaks = false 
 	} 
     }
@@ -34,7 +34,7 @@ service = MessageLogger
 	untracked string threshold = "WARNING" 
 	untracked PSet default = 
 	{ 
-	    untracked int32 limit = -1 
+	    untracked int32 limit = 100000 
 	    untracked bool noLineBreaks = false 
 	} 
     }
@@ -44,7 +44,7 @@ service = MessageLogger
 	untracked string threshold = "INFO" 
 	untracked PSet default = 
 	{ 
-	    untracked int32 limit = -1 
+	    untracked int32 limit = 100000
 	    untracked bool noLineBreaks = false 
 	} 
     }
@@ -54,7 +54,7 @@ service = MessageLogger
 	untracked string threshold = "DEBUG" 
 	untracked PSet default = 
 	{ 
-	    untracked int32 limit = -1 
+	    untracked int32 limit = 100000
 	    untracked bool noLineBreaks = false 
 	} 
     }
