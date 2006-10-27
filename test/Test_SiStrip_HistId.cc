@@ -78,4 +78,4 @@ void Test_SiStrip_HistId::analyze(const edm::Event& iEvent, const edm::EventSetu
 }
 
 //define this as a plug-in
-DEFINE_FWK_MODULE(Test_SiStrip_HistId)
+DEFINE_FWK_MODULE(Test_SiStrip_HistId);
