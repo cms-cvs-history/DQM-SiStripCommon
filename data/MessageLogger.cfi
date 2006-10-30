@@ -3,68 +3,55 @@ service = MessageLogger
     untracked vstring destinations = 
     { 
 	"cout",
-	//"cerr",
-	"event.log", 
-	"error.log", 
-	"debug.log" 
+	"cerr",
+	"event",
+	"error", 
+	"debug" 
     } 
     
     untracked PSet cout = 
     { 
 	untracked string threshold = "INFO" 
-	untracked PSet default = 
-	{ 
-	    untracked int32 limit = 100000
-	    untracked bool noLineBreaks = false 
-	} 
+	untracked int32 limit = 100000
+	untracked bool noLineBreaks = false 
     }
 
     untracked PSet cerr = 
     { 
 	untracked string threshold = "ERROR" 
-	untracked PSet default = 
-	{ 
-	    untracked int32 limit = 100000
-	    untracked bool noLineBreaks = false 
-	} 
+	untracked int32 limit = 100000
+	untracked bool noLineBreaks = false 
     }
 
-    untracked PSet error.log = 
+    untracked PSet error = 
     { 
-	untracked string threshold = "WARNING" 
-	untracked PSet default = 
-	{ 
-	    untracked int32 limit = 100000 
-	    untracked bool noLineBreaks = false 
-	} 
+	untracked string threshold = "ERROR" 
+	untracked int32 limit = 100000 
+	untracked bool noLineBreaks = false 
     }
-    
-    untracked PSet event.log = 
+
+    untracked PSet event = 
     { 
 	untracked string threshold = "INFO" 
-	untracked PSet default = 
-	{ 
-	    untracked int32 limit = 100000
-	    untracked bool noLineBreaks = false 
-	} 
+	untracked int32 limit = 100000
+	untracked bool noLineBreaks = false 
     }
     
-    untracked PSet debug.log = 
+    untracked PSet debug = 
     { 
 	untracked string threshold = "DEBUG" 
-	untracked PSet default = 
-	{ 
-	    untracked int32 limit = 100000
-	    untracked bool noLineBreaks = false 
-	} 
+	untracked int32 limit = 100000
+	untracked bool noLineBreaks = false 
     }
     
     //@@ comment to suppress debug statements!
     untracked vstring debugModules = { "*" } 
 
+    // allows to suppress output from specific modules 
+    untracked vstring suppressDebug   = { }
+    untracked vstring suppressInfo    = { }
+    untracked vstring suppressWarning = { }
+    
 }
 
-// "error.log": contains ERRORs and WARNINGs
-// "event.log": contains ERRORs and WARNINGs and INFO
-// "debug.log": contains ERRORs and WARNINGs and INFO and DEBUG (if debug mode used)
 
