@@ -1,0 +1,16 @@
+service = MLlog4cplus { }
+
+service = MessageLogger {
+
+    // Threshold for messages streamed to log4cplus
+    untracked PSet log4cplus = { untracked string threshold = "DEBUG" }
+
+    //@@ comment to suppress debug statements!
+    untracked vstring debugModules = { "*" } 
+
+    // allows to suppress output from specific modules 
+    untracked vstring suppressDebug   = { }
+    untracked vstring suppressInfo    = { }
+    untracked vstring suppressWarning = { }
+
+}
