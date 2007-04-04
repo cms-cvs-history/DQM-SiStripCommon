@@ -25,7 +25,7 @@ service = MessageLogger
 
     untracked PSet error = 
     { 
-	untracked string threshold = "ERROR" 
+	untracked string threshold = "WARNING" 
 	untracked int32 limit = 100000 
 	untracked bool noLineBreaks = false 
     }
