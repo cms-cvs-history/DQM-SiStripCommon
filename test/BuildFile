@@ -6,7 +6,7 @@
 <use name=DQM/SiStripCommon>
 <use name=boost>
 <library file="*.cc" name=testDQMSiStripCommon>
-  <flags SEAL_PLUGIN_NAME="testDQMSiStripCommon">
+  <flags EDM_PLUGIN=1>
 </library>
 
 <export>
