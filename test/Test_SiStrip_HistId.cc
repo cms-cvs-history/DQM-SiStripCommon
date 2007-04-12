@@ -15,7 +15,6 @@
 #include "FWCore/Framework/interface/EDAnalyzer.h"
 
 #include "FWCore/Framework/interface/Event.h"
-#include "FWCore/Framework/interface/MakerMacros.h"
 
 #include "FWCore/ParameterSet/interface/ParameterSet.h"
 
@@ -78,4 +77,6 @@ void Test_SiStrip_HistId::analyze(const edm::Event& iEvent, const edm::EventSetu
 }
 
 //define this as a plug-in
+#include "FWCore/PluginManager/interface/ModuleDef.h"
+#include "FWCore/Framework/interface/MakerMacros.h"
 DEFINE_FWK_MODULE(Test_SiStrip_HistId);
