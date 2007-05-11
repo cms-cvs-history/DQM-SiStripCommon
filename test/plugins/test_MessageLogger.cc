@@ -1,4 +1,4 @@
-#include "DQM/SiStripCommon/test/stubs/test_MessageLogger.h"
+#include "DQM/SiStripCommon/test/plugins/test_MessageLogger.h"
 #include "FWCore/MessageLogger/interface/MessageLogger.h"
 #include "DataFormats/SiStripCommon/interface/SiStripConstants.h"
 #include <iostream>
