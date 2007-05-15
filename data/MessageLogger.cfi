@@ -10,7 +10,7 @@ service = MessageLogger
     
     untracked PSet cout = 
     { 
-	untracked string threshold = "INFO" 
+	untracked string threshold = "WARNING" 
 	untracked int32 limit = 100000
 	untracked bool noLineBreaks = false 
     }
