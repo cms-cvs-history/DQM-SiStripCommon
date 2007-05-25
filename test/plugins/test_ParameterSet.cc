@@ -1,4 +1,4 @@
-#include "DQM/SiStripCommon/test/stubs/test_ParameterSet.h"
+#include "DQM/SiStripCommon/test/plugins/test_ParameterSet.h"
 #include "DataFormats/SiStripCommon/interface/SiStripConstants.h"
 #include "FWCore/MessageLogger/interface/MessageLogger.h"
 #include "FWCore/ParameterSet/interface/MakeParameterSets.h"
