@@ -2,7 +2,6 @@
 #include "DataFormats/SiStripCommon/interface/SiStripConstants.h"
 #include "FWCore/MessageLogger/interface/MessageLogger.h"
 #include "FWCore/ParameterSet/interface/MakeParameterSets.h"
-#include "FWCore/ParameterSet/src/parse.cc"
 #include <iostream>
 #include <sstream>
 #include <fstream>
@@ -37,8 +36,6 @@ test_ParameterSet::test_ParameterSet( const edm::ParameterSet& pset )
 
 }
 
-#include "FWCore/ParameterSet/interface/parse.h"
-#include "FWCore/ParameterSet/interface/ProcessDesc.h"
 
 // -----------------------------------------------------------------------------
 // 
