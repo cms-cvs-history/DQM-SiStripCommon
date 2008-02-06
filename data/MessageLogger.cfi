@@ -4,43 +4,51 @@ service = MessageLogger
     { 
 	"cout",
 	"cerr",
-	"event",
-	"error", 
-	"debug" 
+	"debug",
+	"info",
+	"warning",
+	"error"
     } 
     
     untracked PSet cout = 
     { 
-	untracked string threshold = "INFO" 
+	untracked string threshold = "WARNING" 
 	untracked int32 limit = 100000
 	untracked bool noLineBreaks = false 
     }
 
     untracked PSet cerr = 
     { 
-	untracked string threshold = "WARNING" 
+	untracked string threshold = "ERROR" 
 	untracked int32 limit = 100000
 	untracked bool noLineBreaks = false 
     }
 
-    untracked PSet error = 
+    untracked PSet debug = 
+    { 
+	untracked string threshold = "DEBUG" 
+	untracked int32 limit = 100000
+	untracked bool noLineBreaks = false 
+    }
+
+    untracked PSet info = 
+    { 
+	untracked string threshold = "INFO" 
+	untracked int32 limit = 100000
+	untracked bool noLineBreaks = false 
+    }
+
+    untracked PSet warning = 
     { 
 	untracked string threshold = "WARNING" 
 	untracked int32 limit = 100000 
 	untracked bool noLineBreaks = false 
     }
 
-    untracked PSet event = 
+    untracked PSet error = 
     { 
-	untracked string threshold = "INFO" 
-	untracked int32 limit = 100000
-	untracked bool noLineBreaks = false 
-    }
-    
-    untracked PSet debug = 
-    { 
-	untracked string threshold = "DEBUG" 
-	untracked int32 limit = 100000
+	untracked string threshold = "ERROR" 
+	untracked int32 limit = 100000 
 	untracked bool noLineBreaks = false 
     }
     
