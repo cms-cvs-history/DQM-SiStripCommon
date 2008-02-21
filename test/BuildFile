@@ -1,18 +1,5 @@
-<library file="*.cc" name=testDQMSiStripCommon>
-  <use name=FWCore/Framework>
-  <use name=FWCore/ParameterSet>
-  <use name=FWCore/MessageLogger>
-  <use name=FWCore/PluginManager>
-  <use name=DataFormats/SiStripCommon>
-  <use name=DQM/SiStripCommon>
-  <use name=boost>
-  <flags EDM_PLUGIN=1>
-</library>
-
 <library file="plugins/*.cc" name=testDQMSiStripCommonPlugins>
-  <use name=DataFormats/SiStripCommon>
+  <use name=DQM/SiStripCommon>
   <use name=FWCore/Framework>
-  <use name=FWCore/ParameterSet>
-  <use name=FWCore/MessageLogger>
   <flags EDM_PLUGIN=1>
 </library>
