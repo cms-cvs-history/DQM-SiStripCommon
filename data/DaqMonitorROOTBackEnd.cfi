@@ -1,3 +1,2 @@
-// access to DQM framework 
-service = DaqMonitorROOTBackEnd {}
+service = DQMStore { } //@@ replaces old "DaqMonitorROOTBackEnd"
 
