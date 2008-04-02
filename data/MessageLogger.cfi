@@ -2,7 +2,6 @@ service = MessageLogger
 {
     untracked vstring destinations = 
     { 
-	"cout",
 	"cerr",
 	"debug",
 	"info",
@@ -10,13 +9,6 @@ service = MessageLogger
 	"error"
     } 
     
-    untracked PSet cout = 
-    { 
-	untracked string threshold = "WARNING" 
-	untracked int32 limit = 100000
-	untracked bool noLineBreaks = false 
-    }
-
     untracked PSet cerr = 
     { 
 	untracked string threshold = "ERROR" 
