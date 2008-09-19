@@ -1,5 +1,12 @@
-<library file="plugins/*.cc" name=testDQMSiStripCommonPlugins>
   <use name=DQM/SiStripCommon>
   <use name=FWCore/Framework>
-  <flags EDM_PLUGIN=1>
+  <use name=DQMServices/Core>
+  <use name=boost>
+
+<library file="plugins/testTkHistoMap.cc" name=testTkHistoMap>
+ <flags EDM_PLUGIN=1>
+</library>
+
+<library file="plugins/Test_SiStrip_HistId.cc" name=Test_SiStrip_HistId>
+ <flags EDM_PLUGIN=1>
 </library>
