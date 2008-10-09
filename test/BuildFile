@@ -6,6 +6,8 @@
 <library file="plugins/testTkHistoMap.cc" name=testTkHistoMap>
   <use name=Geometry/TrackerGeometryBuilder>
   <use name=Geometry/Records>
+  <use name=root>
+  <use name=rootgraphics>
  <flags EDM_PLUGIN=1>
 </library>
 
