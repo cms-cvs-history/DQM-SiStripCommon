@@ -1,9 +1,0 @@
-module PoolOutputSafe = OutServ 
-{
-    //untracked int32 maxSize = 100000000
-    //untracked uint32 commitInterval = 1000
-}
-
-// untracked int32 maxSize:		[default=?]	max number of entries (events?) per file 
-// untracked uint32 commitInterval:	[default=?]	freq with which writing events to disk
-
